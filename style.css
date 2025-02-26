@@ -10,7 +10,7 @@
 }
 
 html {
-    scroll-padding-top: 190px;
+    scroll-padding-top: 100px;
 }
 
 html, body {
@@ -234,7 +234,7 @@ i:hover {
     justify-content: center;
     padding: 50px;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 #experience h2 {
