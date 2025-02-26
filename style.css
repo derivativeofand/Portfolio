@@ -431,10 +431,6 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    .flip-card-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-    
     h1 {
         font-size: 24px !important;
     }
@@ -522,7 +518,59 @@ footer {
         margin: 150px 0px;
     }
     
+    .flip-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
 } 
 
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 18px !important; /* Slightly larger body text */
+        line-height: 1.6 !important;
+    }
+
+    h1 {
+        font-size: 36px !important; /* Slightly smaller h1 for tablets */
+    }
+
+    h2 {
+        font-size: 30px !important; /* Slightly smaller h2 for tablets */
+    }
+
+    h3 {
+        font-size: 24px !important; /* Slightly smaller h3 for tablets */
+    }
+
+    p {
+        font-size: 18px !important; /* Slightly larger body text */
+        line-height: 1.6 !important;
+    }
+
+    a, button {
+        font-size: 18px !important; /* Slightly larger buttons/links */
+    }
+
+    .home {
+        width: 100%;
+        flex-direction: column;
+        text-align: left;
+        justify-items: center;
+        padding: 150px 35px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    header img {
+        margin-top: 80px;
+        margin-left: 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+}
 
 
