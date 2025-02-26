@@ -433,7 +433,7 @@ footer {
     border-bottom: 3px solid transparent;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     h1 {
         font-size: 30px !important;
     }
@@ -601,7 +601,7 @@ footer {
     .light {
         position: relative;
         right: 70px;
-        bottom: 2px;
+        bottom: 3px;
     }
 
     .home {
