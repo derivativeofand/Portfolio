@@ -159,6 +159,7 @@ header {
     padding: 150px 50px;
 }
 
+
 .hero-text {
     width: 100%; 
 }
@@ -433,9 +434,13 @@ footer {
 
 @media only screen and (max-width: 768px) {
     h1 {
-        font-size: 24px !important;
+        font-size: 30px !important;
     }
     
+    h2 {
+        font-size: 20px !important;
+    }
+
     p {
         font-size: 12px !important;
     }
@@ -495,6 +500,7 @@ footer {
         width: 100%;
     }
 
+
     header img {
         margin-top: 80px;
         margin-left: 0;
@@ -508,8 +514,16 @@ footer {
         height: 100%;
     }
 
+    .experience i {
+        font-size: 20px;
+    }
+
     .experience-item:hover {
         transform: none;   
+    }
+
+    .duration .fa-map-marker-alt {
+        display: inline-block;
     }
 
     .skills {
@@ -533,15 +547,12 @@ footer {
     }
 
     h1 {
-        font-size: 36px !important; /* Slightly smaller h1 for tablets */
+        font-size: 40px !important; 
     }
 
     h2 {
-        font-size: 30px !important; /* Slightly smaller h2 for tablets */
-    }
+        font-size: 30px !important; 
 
-    h3 {
-        font-size: 24px !important; /* Slightly smaller h3 for tablets */
     }
 
     p {
@@ -549,9 +560,50 @@ footer {
         line-height: 1.6 !important;
     }
 
-    a, button {
-        font-size: 18px !important; /* Slightly larger buttons/links */
+
+    .icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
     }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        border-bottom: none;
+        transition: color 0.5s;
+    }
+    
+
+    .nav-links a:hover {
+        color: #ffcc00;
+        border-bottom: none;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+
+    .light {
+        position: relative;
+        right: 70px;
+        bottom: 3px;
+    }
+
 
     .home {
         width: 100%;
@@ -572,6 +624,10 @@ footer {
         height: auto;
     }
 
+    .flip-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    
 }
 
 
