@@ -570,7 +570,7 @@ footer {
         display: block;
         position: absolute;
         right: 20px;
-        top: 20px;
+        top: 25px;
         font-size: 24px;
         cursor: pointer;
         color: white;
@@ -606,7 +606,7 @@ footer {
     .light {
         position: relative;
         right: 70px;
-        bottom: 5px;
+        bottom: 4px;
     }
 
 
