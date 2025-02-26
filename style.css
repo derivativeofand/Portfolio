@@ -45,6 +45,7 @@ body {
 #g {
     margin-right: 5px;
 }
+
 /* Navigation Bar */
 .logo {
     display: flex;
@@ -95,7 +96,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -116,8 +117,9 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 30px; /* Space between links */
+    gap: 30px;
     align-items: center;
+
 }
 
 .nav-links a {
@@ -169,7 +171,7 @@ header h1 {
 header h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: #ffcc00; /* Yellow accent */
+    color: #ffcc00;
 }
 
 header p {
@@ -223,6 +225,7 @@ i:hover {
     margin-left: 10px;
 }
 
+/* Experience Section */
 .experience {
     height: auto;
     align-content: center;
@@ -285,6 +288,7 @@ i:hover {
     margin-bottom: 0.5rem;
 }
 
+/* Skills Section */
 .skills {
     width: 100%;
     height: 100%;
@@ -319,6 +323,7 @@ i:hover {
     transform: translateY(-5px);
 }
 
+/* Projects Section */
 .projects {
     align-content: center;
     text-align: left;
@@ -383,7 +388,6 @@ i:hover {
 
 }
 
-
 .flip-card-front h2, .flip-card-back h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -411,7 +415,7 @@ i:hover {
     background-color: #e6b800;
 }
 
-
+/* Footer Section */
 footer {
     background-color: black;
     color: white;
@@ -426,20 +430,17 @@ footer {
     border-bottom: 3px solid transparent;
 }
 
-
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
+    .flip-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
     h1 {
         font-size: 24px !important;
     }
     
     p {
-        font-size: 14px !important;
-    }
-
-    .logo {
-        position: relative;
-        right: 40px;
+        font-size: 12px !important;
     }
 
     .icon {
@@ -481,7 +482,7 @@ footer {
 
     .light {
         position: relative;
-        right: 20px;
+        right: 70px;
         top: 2px;
     }
 
@@ -521,6 +522,7 @@ footer {
         margin: 150px 0px;
     }
     
-}
+} 
+
 
 
