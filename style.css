@@ -248,9 +248,6 @@ i:hover {
     border-radius: 8px;
 }
 
-.experience-item a:visited {
-    color: #ffcc00;
-}
 
 .experience-item h3 {
     font-size: 1.5rem;
@@ -272,6 +269,10 @@ i:hover {
 .company {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
+}
+
+.company a {
+    color: #ffcc00;
 }
 
 .duration {
