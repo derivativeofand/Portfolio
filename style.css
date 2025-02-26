@@ -10,7 +10,7 @@
 }
 
 html {
-    scroll-padding-top: 90px;
+    scroll-padding-top: 190px;
 }
 
 html, body {
@@ -297,7 +297,7 @@ i:hover {
     align-content: center;
     text-align: left;
     padding: 50px;
-    margin-bottom: 300px;
+    margin-bottom: 250px;
 }
 
 .tag-cloud, .tag-cloud2{
