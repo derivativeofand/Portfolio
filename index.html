@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>J</h1>
+                <h1>u</h1>
+                <h1>n</h1>
+                <h1>y</h1>
+                <h1>o</h1>
+                <h1>n</h1>
+                <h1 id="g">g</h1>
+                <h1>H</h1>
+                <h1>a</h1>
+            </div>
+            
+            <div class="nav-links" id="nav-links">
+
+                <a href="#home">Home</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+            </div>
+            
+            <div class="light" id="light">
+                <i class="fa-regular fa-moon fa-fw" onclick="turnLight()"></i>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        
+        
+        <!-- Hero Section -->
+        <header class="home" id="home">
+            <div class="hero-text">
+                <h1>Hello! I'm <span class="highlight">Junyong Ha</span></h1>
+                <h2>A Passionate Software Developer</h2>
+
+                <p>I'm a third-year Computer Science student at <strong>Western University</strong>, deeply interested in <span class="highlight">cybersecurity</span> and software development. I love building secure and efficient applications while continuously learning new technologies.</p>
+
+                <a class="resume-link" href="https://drive.google.com/file/d/1Fc1FFgHbjiEa4dLcihLPzvxHUOs8W_DC/view?usp=sharing" target="_blank">View My Resume</a>
+
+                <div class="social">
+                    <a href="https://github.com/derivativeofand" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/junyongha/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <img src="./profile.JPEG" alt="Header Illustration">
+        </header>
+
+        <div class="experience" id="experience">
+            <h1>Experience</h1>
+          
+            <div class="experience-item">
+              <h3>IT Summer Student</h3>
+              <p class="company">Town of Quispamsis. <a href="https://www.quispamsis.ca/" target="_blank">(Website)</a></p>
+              <p class="duration">
+                <i class="fas fa-calendar-alt"></i>July 2024 - Sept 2024 | <i class="fas fa-map-marker-alt"></i>Quispamsis, NB</p>
+              <ul class="description">
+                    <li>Implemented and managed a password manager, Bitwarden, across 50+ devices and led training sessions to assist staff members to ensure effective adoption and secure usage.</li>
+                    <li>Managed 50+ mobile devices using IBM MaaS 360, a SaaS model, ensuring cybersecurity compliance.</li>
+                    <li>Provided technical support for network and software issues.</li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="skills" id="skills">
+            
+            <h1>Programming Languages</h1>
+            <div class="tag-cloud">
+                <span class="tag" style="font-size: 24px;">Java</span>
+                <span class="tag" style="font-size: 22px;">Python</span>
+                <span class="tag" style="font-size: 20px;">C</span>
+                <span class="tag" style="font-size: 20px;">C++</span>
+                <span class="tag" style="font-size: 20px;">SQL</span>
+                <span class="tag" style="font-size: 20px;">JavaScript</span>
+                <span class="tag" style="font-size: 20px;">HTML</span>
+                <span class="tag" style="font-size: 20px;">CSS</span>
+                <span class="tag" style="font-size: 20px;">Microsoft VBA</span>
+            </div>
+
+            <h1>Libraries/Tools</h1>
+            <div class="tag-cloud2">
+                <span class="tag" style="font-size: 24px;">Unix/Linux</span>
+                <span class="tag" style="font-size: 22px;">React.js</span>
+                <span class="tag" style="font-size: 20px;">OpenCV</span>
+                <span class="tag" style="font-size: 20px;">Mediapipe</span>
+                <span class="tag" style="font-size: 20px;">Git</span>
+                <span class="tag" style="font-size: 20px;">Qt</span>
+            </div>
+        </div>
+        
+        <div class="projects" id="projects">
+            <h1>Projects</h1>
+
+            <div class="flip-card-grid">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Minesweeper</h2>
+                            <img class="cover" src="./icons/minesweeper.svg" alt="minesweeper" title="minesweeper">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Minesweeper</h2>
+                            <p>Classic Minesweeper game developed using <strong>C++</strong> and <strong>Qt 5 framework</strong> for the responsive and intuitive UI design. The project is developed in a <strong>Linux</strong> environent using <strong>WSL</strong> and <strong>Ubuntu</strong>. Leveraged object-oriented programming (OOP) principles to build a modular and maintainable codebase, reducing debugging time and improving efficiency.</p>
+                            <a href="https://github.com/derivativeofand/Minesweeper" target="_blank">Github Link</a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Solar Map</h2>
+                            <img class="cover2" src="./icons/solar.svg" alt="solar-map" title="solar-map">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Solar Map</h2>
+                            <p>Developed during <strong>Hack Western 11</strong>, this project is a renewable energy visualizer that allows users to search for locations by ZIP code or city name and explore solar and wind energy potential. The interactive map, built with <strong>Mapbox GL JS</strong>, displays markers and overlays with energy insights, while an intuitive UI built with <strong>React.js</strong> ensures a seamless user experience. The project integrates the <strong>NASA weather API</strong> for energy data and the <strong>Mapbox Geocoding API</strong> for location services.</p>
+                            <a href="https://github.com/Yuting-H/SolarMap" target="_blank">Github Link</a>
+                            <a href="https://dorahacks.io/buidl/20362/" target="_blank">More Information</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Finger Painter</h2>
+                            <img class="finger" src="./icons/finger.png" alt="finger-painter" title="finger-painter">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Finger Painter</h2>
+                            <p>Developed during <strong>GDSC 2024 Hacks</strong>, this project is an AI-powered painter application that tracks hand movements through a webcam, allowing users to draw in the air using hand gestures in a given time. When the timer is up, the user's drawing is captured and saved in the database implemnted in SQLite. Built with <strong>Python</strong>, it leverages the <strong>OpenCV</strong> library for motion tracking and Google’s <strong>MediaPipe</strong> for precise hand gesture recognition.</p>
+                            <a href="https://github.com/jerpyk/GDSC2024" target="_blank">Github Link</a>
+                            <a href="https://devpost.com/software/gdsc2024-project-finger-painter" target="_blank">More Information</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <p>&copy; 2025 Junyong Ha. All rights reserved.</p>
+                
+                <a href="https://www.instagram.com/junyongha3027/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/derivativeofand" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/junyongha/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:jha58@uwo.ca" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </footer>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
