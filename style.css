@@ -156,7 +156,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 150px 50px;
+    padding: 150px 50px 200px 50px;
 }
 
 
@@ -233,7 +233,7 @@ i:hover {
     width: 100%; 
     justify-content: center;
     padding: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 300px;
 }
 
 #experience h2 {
@@ -606,7 +606,7 @@ footer {
     .light {
         position: relative;
         right: 70px;
-        bottom: 4px;
+        bottom: 2px;
     }
 
 
@@ -634,5 +634,3 @@ footer {
     }
     
 }
-
-
