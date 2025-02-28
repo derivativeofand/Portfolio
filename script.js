@@ -1,11 +1,10 @@
+// Function for switching between dark mode and light mode
 function turnLight() {
     const main = document.querySelector('body');
     const style = window.getComputedStyle(main);
     let background = style.getPropertyValue("background-color");
 
     const tag = document.querySelectorAll('.tag');
-    const experience = document.querySelectorAll('.experience-item');
-    
     const icons = document.querySelectorAll('.social i');
     const element = document.querySelector(".light");
 
@@ -40,7 +39,6 @@ function turnLight() {
         element.replaceChild(newNode1, element.childNodes[1]);
         newNode1.addEventListener("click", turnLight);
     } else {
-
         main.style.backgroundColor = "#f5f5f5";
         main.style.color = "#333333";
         
@@ -75,6 +73,7 @@ function turnLight() {
 
 }
 
+// Function for Hamburger menu
 function hamburger() {
     var navLinks = document.getElementById("nav-links");
     if (navLinks.classList.contains("active")) {
@@ -84,13 +83,45 @@ function hamburger() {
     }
 }
 
-document.querySelectorAll('.nav-links a').forEach(anchor => {
+let menu = document.querySelectorAll('.nav-links a');
+menu.forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault(); // Prevent default anchor behavior
-        const targetId = this.getAttribute('href').substring(1); // Get the target section ID
-        const targetSection = document.getElementById(targetId); // Find the target section
-        if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Smooth scroll
-        }
+        menu.forEach(link => {
+            link.classList.remove('active');
+        });
+        this.classList.add('active');
     });
 });
+
+// Function for the updating the nav-link
+const sections = document.querySelectorAll('section');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            console.log(entry.target);
+            menu.forEach((anchor) => {
+                anchor.classList.remove('active');
+            });
+
+            const id = entry.target.getAttribute('id');
+            const link = document.querySelector(`.nav-links a[href="#${id}"]`);
+            if(link != null) {
+                link.classList.add('active');
+            } else {
+                document.querySelector('.homeLink').classList.add('active');
+            }
+        }
+    }); 
+},
+    {
+        threshold: 0.3,
+        rootMargin: '55px 0px 0px 0px'
+    }
+);
+
+
+sections.forEach((section) => {
+    observer.observe(section);
+});
+
+
