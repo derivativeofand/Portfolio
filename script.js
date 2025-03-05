@@ -74,8 +74,8 @@ function turnLight() {
 }
 
 // Function for Hamburger menu
+var navLinks = document.getElementById("nav-links");
 function hamburger() {
-    var navLinks = document.getElementById("nav-links");
     if (navLinks.classList.contains("active")) {
         navLinks.classList.remove("active");
     } else {
@@ -88,6 +88,9 @@ menu.forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         menu.forEach(link => {
             link.classList.remove('active');
+            if (navLinks.classList.contains("active")) {
+                navLinks.classList.remove("active");
+            } 
         });
         this.classList.add('active');
     });
@@ -98,7 +101,6 @@ const sections = document.querySelectorAll('section');
 const observer = new IntersectionObserver(entries => {
     entries.forEach((entry) => {
         if(entry.isIntersecting) {
-            console.log(entry.target);
             menu.forEach((anchor) => {
                 anchor.classList.remove('active');
             });
@@ -115,7 +117,7 @@ const observer = new IntersectionObserver(entries => {
 },
     {
         threshold: 0.3,
-        rootMargin: '55px 0px 0px 0px'
+        rootMargin: '0px 0px 0px 0px'
     }
 );
 
