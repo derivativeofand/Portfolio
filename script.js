@@ -109,15 +109,21 @@ const observer = new IntersectionObserver(entries => {
             const link = document.querySelector(`.nav-links a[href="#${id}"]`);
             if(link != null) {
                 link.classList.add('active');
+                document.querySelector('.wave2').classList.add('wave');                                    
+                document.querySelector('.wave').classList.remove('wave2');                    
             } else {
                 document.querySelector('.homeLink').classList.add('active');
+
+                if(document.querySelector('.wave') != null) {
+                    document.querySelector('.wave').classList.add('wave2');
+                    document.querySelector('.wave2').classList.remove('wave');                     
+                }
             }
         }
     }); 
 },
     {
-        threshold: 0.3,
-        rootMargin: '0px 0px 0px 0px'
+        threshold: 0.4,
     }
 );
 
