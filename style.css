@@ -148,6 +148,14 @@ h1 {
     border-bottom: 2px solid #ffcc00;
 }
 
+.wave2 {
+    width: 80px;
+    position: relative;
+    top: 5px;
+    animation-name: wave-animation;
+    animation-duration: 1.5s;
+}
+ 
 .light {
     border: 5px solid #ffcc00;
     border-radius: 90px; 
@@ -173,9 +181,12 @@ h1 {
     margin: 100px 0px 8px 0px;
 }
 
-
 .hero-text {
     width: 100%; 
+}
+
+#intro {
+    display: flex;
 }
 
 .home h1 {
@@ -219,11 +230,17 @@ h1 {
     margin: 0 5px;
 }
 
-.home img {
+.profile {
     border: 1px solid black;
     margin-left: 100px;
     width: 350px;
     border-radius: 50%;
+}
+
+.wave {
+    width: 80px;
+    position: relative;
+    top: 5px;
 }
 
 i {
@@ -455,6 +472,13 @@ footer {
     border-bottom: 3px solid transparent;
 }
 
+
+@keyframes wave-animation {
+    0% {rotate: 0deg;}
+    50% {rotate: 45deg;}
+    100% {rotate: 0deg;}
+}
+
 @media only screen and (max-width: 767px) {
     h1 {
         font-size: 25px !important;
@@ -498,11 +522,6 @@ footer {
         left: 0;
         padding: 10px 0;
         text-align: center;
-    }
-
-    .nav-links a:active {
-        color: #ffcc00;
-        border-bottom: 2px solid #ffcc00;
     }
 
     .nav-links.active {
