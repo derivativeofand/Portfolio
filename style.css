@@ -227,23 +227,18 @@ h1 {
 
 #intro {
     display: flex;
-    align-items: center;
-    gap: 5px; 
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 #intro img {
     width: 80px;
 }
 
-#intro h1 {
-    white-space: nowrap;
-}
-
 .wave {
     width: 80px;
     animation-name: wave-animation;
     animation-duration: 1.5s;
+    animation-delay: .5s;
 }
 
 i {
@@ -482,7 +477,7 @@ footer {
     100% {rotate: 0deg;}
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     h1 {
         font-size: 25px !important;
     }
@@ -620,6 +615,7 @@ footer {
     }
 
     #intro img {
+        width: 65px;
         margin: 0px !important;
     }
 
