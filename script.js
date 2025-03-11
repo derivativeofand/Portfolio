@@ -96,6 +96,13 @@ menu.forEach(anchor => {
     });
 });
 
+let flip = document.querySelectorAll('.flip-card');
+flip.forEach(card => {
+    card.addEventListener('click', function () {
+        card.classList.toggle('locked');
+    });
+});
+
 // Function for the updating the nav-link
 const sections = document.querySelectorAll('section');
 const observer = new IntersectionObserver(entries => {
@@ -105,6 +112,12 @@ const observer = new IntersectionObserver(entries => {
                 anchor.classList.remove('active');
             });
 
+            if(entry.target.getAttribute('id') != 'projects') {
+                flip.forEach(card => {
+                    card.classList.remove('locked');
+                });
+            }
+                
             const id = entry.target.getAttribute('id');
             const link = document.querySelector(`.nav-links a[href="#${id}"]`);
             if(link != null) {
@@ -123,7 +136,8 @@ const observer = new IntersectionObserver(entries => {
     }); 
 },
     {
-        threshold: 0.4,
+        threshold: 0.2,
+        rootMargin: "50px 0px 50px 0px"
     }
 );
 
