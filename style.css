@@ -528,7 +528,7 @@ footer {
     }
 
     .social i {
-        font-size: 35px;
+        font-size: 45px;
     }
 
     .nav-links {
@@ -597,11 +597,11 @@ footer {
     }
 
     .flip-card {
-        min-height: 600px;
+        min-height: 650px;
     }
 
     footer i {
-        font-size: 35px;
+        font-size: 45px;
     }
     
 } 
